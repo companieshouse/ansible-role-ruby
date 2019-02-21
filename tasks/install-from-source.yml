@@ -31,7 +31,7 @@
   register: current_ruby_version
   failed_when: false
   changed_when: false
-  always_run: true
+  check_mode: no
 
 - name: Download ruby.
   get_url:
